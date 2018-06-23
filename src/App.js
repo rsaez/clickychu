@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./gotroster.json";
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
 
   removeFriend = id => {
     // Filter this.state.friends for friends with an id not equal to the id being removed
-    const roster = this.state.friends.filter(friend => friend.id !== id);
+    const friends = this.state.friends.filter(friend => friend.id !== id);
     // Set this.state.friends equal to the new friends array
     this.setState({ friends });
   };
